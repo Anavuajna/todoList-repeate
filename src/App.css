@@ -2,37 +2,66 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  }
+
+input {
+  width: 230px;
+  padding: 10px;
+  text-align: center;
+  border: #ffe4d9 solid 2px;
 }
 
-.App-link {
-  color: #61dafb;
+input:hover {
+  border: 2px solid #ff935b;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn {
+  border: none;
+  width: 250px;
+  margin: 10px;
+  padding: 10px;
+  font-weight: bold;
 }
+
+.add {
+  background-color: #c7db86;
+}
+
+.delete {
+  background-color: #e48a70;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  }
+li {
+  list-style: none;
+  margin: 10px 0 10px -40px;
+  padding: 10px;
+  background-color: #fbeede;
+  width: 300px;
+  align-self: center;
+  }
+
+  /* .check {
+    margin-left: -100px;
+    background-color: black;
+  }
+
+  .check:checked:after {
+    background-color: #ffa500;
+  }
+
+  span {
+    width: 40px;
+    align-self: center;
+  } */
+
+  .crossed {
+    text-decoration: line-through;
+    background-color: #ff935b;
+  }
